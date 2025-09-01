@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
+import { Botao } from './share/botao/botao';
 
 @NgModule({
   declarations: [
     App,
-    Soma
+    Soma,
+    Botao
   ],
   imports: [
     BrowserModule,
