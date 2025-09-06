@@ -5,18 +5,22 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
-import { Botao } from './share/botao/botao';
+import { EstruturaModule } from './estrutura/estrutura-module';
+import { ProdutosModule } from './produtos/produtos-module';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     App,
     Soma,
-    Botao
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContadorModule
+    ContadorModule,
+    EstruturaModule,
+    ProdutosModule,
+    MatToolbarModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
