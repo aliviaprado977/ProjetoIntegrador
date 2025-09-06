@@ -10,6 +10,10 @@ import { Diretiva } from './diretiva/diretiva';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    Diretiva
   ]
+
 })
 export class EstruturaModule { }
