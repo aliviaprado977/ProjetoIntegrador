@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './botao.css'
 })
 export class Botao {
+produtos: any;
 
 }
