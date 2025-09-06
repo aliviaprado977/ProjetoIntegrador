@@ -7,5 +7,26 @@ import { Component } from '@angular/core';
   styleUrl: './diretiva.css'
 })
 export class Diretiva {
+  alunos = [
+    { id: 1, nome: 'Bianca', status: true },
+    { id: 2, nome: 'Giovana', status: false},
+    { id: 3, nome: 'Livia', status: true},
+    { id: 4, nome: 'Bruna', status: false}
+  ];
 
+  exibirLista = true;
+
+  tamanhoFonte = 16;
+
+  alternarExibicao() {
+    this.exibirLista = !this.exibirLista;
+  }
+
+  aumentarFonte() {
+    this.tamanhoFonte += 2;
+  }
+
+  diminuirFonte() {
+    this.tamanhoFonte -= 2;
+  }
 }
