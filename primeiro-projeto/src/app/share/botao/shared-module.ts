@@ -1,12 +1,17 @@
-import { CommonModule } from '@angular/common';
+
 import { NgModule } from '@angular/core';
-import { BotaoComponent } from './botao/botao.component';
-
-
+import { CommonModule } from '@angular/common';
+import { Botao } from './botao/botao';
 
 @NgModule({
-  declarations: [BotaoComponent],
-  imports: [CommonModule],
-  exports: [BotaoComponent]
+  declarations: [
+    Botao
+  ],
+  imports: [
+    CommonModule
+  ],
+  exports: [ 
+    Botao
+  ]
 })
 export class SharedModule { }
